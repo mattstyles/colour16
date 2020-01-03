@@ -16,7 +16,7 @@ npm install -S colour16
 Each palette exposes an array of 16 colours, you can also key by colour name too.
 
 ```js
-const { db } = require('db')
+const { db } = require('colour16')
 
 document.body.style.background = db.blue
 document.body.style.color = db[2]
@@ -25,7 +25,7 @@ document.body.style.color = db[2]
 You can reach in to the package and pull out just single palettes rather than rely on destructuring and then tree shaking to strip unused palettes.
 
 ```js
-const c64 = require('db/c64')
+const c64 = require('colour16/c64')
 ```
 
 ## License
